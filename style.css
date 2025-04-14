@@ -63,6 +63,11 @@ header {
   color: black;
 }
 
+.banner{
+  width: 100%;
+  height: auto;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -105,12 +110,18 @@ body {
 
 .section {
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
   border-bottom: 1px solid #ccc;
   margin-left: 5rem;
   margin-right: 5rem;
 }
 
+@media (max-width: 768px) {
+  .section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 
 /* Gallery */
 
@@ -126,6 +137,21 @@ body {
   width: 300px;
   height: auto;
   border-radius: 2px;
+}
+section h2 {
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid{
+    margin-left:2rem;
+    margin-right:2rem;
+  }
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+    }
 }
 
 /* About */
@@ -145,8 +171,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .about-img {
+      margin-top: 70px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   .about-img img {
-    padding: 10px;
     width: 100%;
     height: auto;
   }
@@ -156,10 +186,17 @@ body {
 
 .section img{
   padding: 20px;
-  width: 700px;
+  width: 500px;
   height: auto;
   display: block;
   box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .section img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Footer */
